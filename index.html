@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FoodTrace — Plant Floor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="board">
+  <div class="board-id">
+    <span class="stamp-mark">FT</span>
+    <div>
+      <h1>FoodTrace</h1>
+      <p>The ERP that fills itself — plant floor &amp; traceability record</p>
+    </div>
+  </div>
+  <div class="board-meta" id="clock"></div>
+</header>
+
+<div class="layout">
+  <nav id="nav">
+    <button data-v="dashboard" class="on"><span class="n">01</span>Floor summary</button>
+    <button data-v="ingest"><span class="n">02</span>Ingest</button>
+    <button data-v="batches"><span class="n">03</span>Production</button>
+    <button data-v="shipments"><span class="n">04</span>Dispatch</button>
+    <button data-v="trace"><span class="n">05</span>Trace &amp; recall</button>
+    <button data-v="forecast"><span class="n">06</span>Forecast &amp; reorder</button>
+  </nav>
+
+  <main>
+    <div id="msg" role="status"></div>
+    <div id="view"></div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
